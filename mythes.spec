@@ -1,7 +1,7 @@
 Name:      mythes
 Summary:   A thesaurus library
 Version:   1.2.3
-Release:   5%{?dist}
+Release:   7%{?dist}
 Source:    http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.gz
 Group:     System Environment/Libraries
 URL:       http://hunspell.sourceforge.net/
@@ -64,6 +64,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/th_gen_idx.pl
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.2.3-7
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-6
+- Mass rebuild 2013-12-27
+
 * Thu Apr 04 2013 Caolán McNamara <caolanm@redhat.com> - 1.2.3-5
 - Resolves: rhbz#926191 support aarch64
 
